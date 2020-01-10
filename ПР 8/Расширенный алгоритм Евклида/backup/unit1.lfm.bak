@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 372
+  Height = 258
+  Top = 309
+  Width = 333
+  Caption = 'Расширенный алгоритм Евклида'
+  ClientHeight = 258
+  ClientWidth = 333
+  OnCreate = FormCreate
+  LCLVersion = '1.6.2.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 240
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 23
+    Top = 80
+    Width = 240
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 33
+    Top = 120
+    Width = 72
+    Caption = 'Пуск'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 54
+    Caption = 'Введите А'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 64
+    Width = 53
+    Caption = 'Введите B'
+    ParentColor = False
+  end
+  object Edit3: TEdit
+    Left = 8
+    Height = 23
+    Top = 176
+    Width = 240
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 8
+    Height = 23
+    Top = 224
+    Width = 240
+    TabOrder = 4
+  end
+  object Edit5: TEdit
+    Left = 8
+    Height = 23
+    Top = 128
+    Width = 240
+    TabOrder = 5
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 160
+    Width = 7
+    Caption = 'X'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 208
+    Width = 7
+    Caption = 'Y'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 15
+    Top = 112
+    Width = 26
+    Caption = 'НОД'
+    ParentColor = False
+  end
+end

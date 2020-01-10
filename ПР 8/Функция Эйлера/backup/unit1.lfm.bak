@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 108
+  Height = 421
+  Top = 184
+  Width = 286
+  Caption = 'Функция Эйлера'
+  ClientHeight = 421
+  ClientWidth = 286
+  OnCreate = FormCreate
+  LCLVersion = '1.6.2.0'
+  object Button1: TButton
+    Left = 40
+    Height = 34
+    Top = 80
+    Width = 200
+    Caption = 'Запуск'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 9
+    Height = 256
+    Top = 152
+    Width = 257
+    Lines.Strings = (
+      ''
+    )
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 9
+    Height = 23
+    Top = 40
+    Width = 257
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 3
+    Height = 15
+    Top = 120
+    Width = 202
+    Caption = 'Простые числа для заданного числа'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 56
+    Height = 15
+    Top = 8
+    Width = 121
+    Caption = 'Максимальное число'
+    ParentColor = False
+  end
+end

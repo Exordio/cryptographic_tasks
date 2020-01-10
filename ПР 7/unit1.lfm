@@ -1,0 +1,104 @@
+object Form1: TForm1
+  Left = 523
+  Height = 449
+  Top = 151
+  Width = 242
+  BorderStyle = bsSingle
+  Caption = 'Метод Перестановки'
+  ClientHeight = 449
+  ClientWidth = 242
+  LCLVersion = '1.6.2.0'
+  object Button1: TButton
+    Left = 40
+    Height = 36
+    Top = 160
+    Width = 136
+    Caption = 'Зашифровать'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 23
+    Top = 48
+    Width = 180
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 24
+    Height = 23
+    Top = 120
+    Width = 64
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 128
+    Height = 23
+    Top = 120
+    Width = 64
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 24
+    Height = 23
+    Top = 256
+    Width = 180
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 88
+    Width = 43
+    Caption = 'Строки:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 128
+    Height = 15
+    Top = 88
+    Width = 53
+    Caption = 'Столбцы:'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 40
+    Height = 36
+    Top = 296
+    Width = 136
+    Caption = 'Расшифровать'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 24
+    Height = 23
+    Top = 400
+    Width = 180
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 15
+    Top = 16
+    Width = 96
+    Caption = 'Исходный текст : '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 40
+    Height = 15
+    Top = 216
+    Width = 127
+    Caption = 'Зашифрованный текст'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 37
+    Height = 15
+    Top = 360
+    Width = 139
+    Caption = 'Расшифрованный текст :'
+    ParentColor = False
+  end
+end

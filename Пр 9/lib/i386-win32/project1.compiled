@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="E:\Lazarus\fpc\2.6.4\bin\i386-win32\fpc.exe" Date="1154382129"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -WG -vewnhi &quot;-FiD:\Dropbox\flash\Павлов А.В. Криптогафические СИМЗИ\Практические работы\Шагиев Рамиль З-309\ПР №9 Хеш-функция\lib\i386-win32&quot; -FuE:\Lazarus\lcl\units\i386-win32\win32 -FuE:\Lazarus\lcl\units\i386-win32 -FuE:\Lazarus\components\lazutils\lib\i386-win32 -FuE:\Lazarus\packager\units\i386-win32 &quot;-FuD:\Dropbox\flash\Павлов А.В. Криптогафические СИМЗИ\Практические работы\Шагиев Рамиль З-309\ПР №9 Хеш-функция\&quot; &quot;-FUD:\Dropbox\flash\Павлов А.В. Криптогафические СИМЗИ\Практические работы\Шагиев Рамиль З-309\ПР №9 Хеш-функция\lib\i386-win32\&quot; -l -dLCL -dLCLwin32 project1.lpr"/>
+</CONFIG>

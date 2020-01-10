@@ -1,0 +1,112 @@
+object Form1: TForm1
+  Left = 450
+  Height = 449
+  Top = 260
+  Width = 327
+  BorderStyle = bsSingle
+  Caption = 'Метод Перестановки'
+  ClientHeight = 449
+  ClientWidth = 327
+  LCLVersion = '1.6.0.4'
+  object Button1: TButton
+    Left = 96
+    Height = 36
+    Top = 208
+    Width = 136
+    Caption = 'Зашифровать'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 28
+    Top = 91
+    Width = 284
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 48
+    Height = 28
+    Top = 155
+    Width = 64
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 219
+    Height = 28
+    Top = 155
+    Width = 64
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 24
+    Height = 28
+    Top = 280
+    Width = 284
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 20
+    Top = 128
+    Width = 52
+    Caption = 'Строки:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 219
+    Height = 20
+    Top = 128
+    Width = 64
+    Caption = 'Столбцы:'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 96
+    Height = 36
+    Top = 320
+    Width = 136
+    Caption = 'Расшифровать'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 24
+    Height = 28
+    Top = 400
+    Width = 284
+    TabOrder = 6
+  end
+  object Label3: TLabel
+    Left = 56
+    Height = 40
+    Top = 8
+    Width = 220
+    Caption = 'Шифр Методом Перестановки. '#13#10'Шагиев Рамиль З-309'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 29
+    Height = 20
+    Top = 64
+    Width = 120
+    Caption = 'Исходный текст : '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Height = 20
+    Top = 253
+    Width = 157
+    Caption = 'Зашифрованный текст'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 24
+    Height = 20
+    Top = 368
+    Width = 171
+    Caption = 'Расшифрованный текст :'
+    ParentColor = False
+  end
+end

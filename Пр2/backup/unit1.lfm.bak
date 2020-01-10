@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 210
+  Height = 143
+  Top = 220
+  Width = 569
+  Caption = 'Form1'
+  ClientHeight = 143
+  ClientWidth = 569
+  LCLVersion = '1.6.2.0'
+  object PageControl1: TPageControl
+    Left = 6
+    Height = 128
+    Top = 7
+    Width = 558
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Шифрование'
+      ClientHeight = 100
+      ClientWidth = 550
+      object Edit2: TEdit
+        Left = 240
+        Height = 23
+        Top = 34
+        Width = 64
+        TabOrder = 0
+      end
+      object Edit1: TEdit
+        Left = 12
+        Height = 23
+        Top = 34
+        Width = 186
+        TabOrder = 1
+      end
+      object Edit3: TEdit
+        Left = 350
+        Height = 23
+        Top = 34
+        Width = 184
+        TabOrder = 2
+      end
+      object Label3: TLabel
+        Left = 418
+        Height = 15
+        Top = 7
+        Width = 35
+        Caption = 'Вывод'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 256
+        Height = 15
+        Top = 7
+        Width = 31
+        Caption = 'Ключ'
+        ParentColor = False
+      end
+      object Button1: TButton
+        Left = 184
+        Height = 25
+        Top = 68
+        Width = 184
+        Caption = 'Шифровать'
+        OnClick = Button1Click
+        TabOrder = 3
+      end
+      object Label1: TLabel
+        Left = 90
+        Height = 15
+        Top = 7
+        Width = 30
+        Caption = 'Текст'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Расшифровка'
+      ClientHeight = 100
+      ClientWidth = 550
+      object Button2: TButton
+        Left = 183
+        Height = 24
+        Top = 68
+        Width = 185
+        Caption = 'Расшифровать'
+        OnClick = Button2Click
+        TabOrder = 0
+      end
+      object Edit4: TEdit
+        Left = 13
+        Height = 23
+        Top = 32
+        Width = 185
+        TabOrder = 1
+      end
+      object Edit5: TEdit
+        Left = 239
+        Height = 23
+        Top = 32
+        Width = 80
+        TabOrder = 2
+      end
+      object Edit6: TEdit
+        Left = 365
+        Height = 23
+        Top = 32
+        Width = 162
+        TabOrder = 3
+      end
+      object Label4: TLabel
+        Left = 78
+        Height = 15
+        Top = 9
+        Width = 34
+        Caption = 'Шифр'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 264
+        Height = 15
+        Top = 9
+        Width = 31
+        Caption = 'Ключ'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 428
+        Height = 15
+        Top = 9
+        Width = 35
+        Caption = 'Вывод'
+        ParentColor = False
+      end
+    end
+  end
+end

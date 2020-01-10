@@ -1,0 +1,82 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ComCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure PageControl1Change(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  Alphabet,Alphabet1,Alphabet2:string;
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+ var i,j:integer;
+begin
+ edit2.text:='';
+ for j:=1 to length(edit1.text) do
+  for i:=1 to 26 do
+      if edit1.text[j] = alphabet[i] then
+      edit2.text:=edit2.text+alphabet1[i];
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+ Alphabet1:=Edit3.text;
+ if not((length(edit3.text)) = length(Alphabet))  then
+ begin
+      showmessage('Алфавит замены введён неверно, повторите ввод'+Slinebreak+
+      '1 Алфавит должен состоять из заглавных английских букв, всего их должно быть 26.');
+      exit;
+      end
+ else
+ showmessage('Новый алфавит успешно задан');
+ Label2.caption:=Alphabet1;
+end;
+
+procedure TForm1.PageControl1Change(Sender: TObject);
+begin
+    Label2.caption:=Alphabet1;
+end;
+
+
+begin
+  Alphabet:='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  Alphabet1:='ZYXWVUTSRQPONMLKJIHGFEDCBA';
+
+end.
+

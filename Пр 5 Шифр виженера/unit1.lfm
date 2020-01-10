@@ -1,0 +1,167 @@
+object Form1: TForm1
+  Left = 193
+  Height = 613
+  Top = 243
+  Width = 865
+  Caption = 'Шифр Виженера, Golubev Z-310, Kuzmin Z-310'
+  ClientHeight = 613
+  ClientWidth = 865
+  LCLVersion = '1.6.4.0'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 600
+    Top = 8
+    Width = 600
+    ColCount = 27
+    DefaultColWidth = 22
+    DefaultRowHeight = 22
+    FixedColor = clCaptionText
+    RowCount = 27
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 640
+    Height = 73
+    Top = 512
+    Width = 200
+    Caption = 'Вывод подматрицы шифрования'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    Left = 624
+    Height = 368
+    Top = 40
+    Width = 224
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 2
+    object TabSheet1: TTabSheet
+      Caption = 'Зашифровка'
+      ClientHeight = 340
+      ClientWidth = 216
+      object Label1: TLabel
+        Left = 56
+        Height = 15
+        Top = 32
+        Width = 87
+        Caption = 'Исходный текст'
+        ParentColor = False
+      end
+      object Edit1: TEdit
+        Left = 0
+        Height = 23
+        Top = 72
+        Width = 216
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 88
+        Height = 15
+        Top = 120
+        Width = 31
+        Caption = 'Ключ'
+        ParentColor = False
+      end
+      object Edit2: TEdit
+        Left = 0
+        Height = 23
+        Top = 152
+        Width = 216
+        TabOrder = 1
+      end
+      object Button3: TButton
+        Left = 56
+        Height = 25
+        Top = 192
+        Width = 105
+        Caption = 'Зашифровать'
+        OnClick = Button3Click
+        TabOrder = 2
+      end
+      object Button4: TButton
+        Left = 56
+        Height = 25
+        Top = 232
+        Width = 105
+        Caption = 'Случ ген ключа'
+        OnClick = Button4Click
+        TabOrder = 3
+      end
+      object Edit3: TEdit
+        Left = 0
+        Height = 23
+        Top = 280
+        Width = 216
+        TabOrder = 4
+      end
+      object Label3: TLabel
+        Left = 88
+        Height = 15
+        Top = 312
+        Width = 35
+        Caption = 'Вывод'
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Расшифровка'
+      ClientHeight = 335
+      ClientWidth = 214
+      object Label4: TLabel
+        Left = 56
+        Height = 15
+        Top = 28
+        Width = 87
+        Caption = 'Исходный текст'
+        ParentColor = False
+      end
+      object Edit4: TEdit
+        Left = 0
+        Height = 23
+        Top = 72
+        Width = 216
+        TabOrder = 0
+      end
+      object Label5: TLabel
+        Left = 91
+        Height = 15
+        Top = 120
+        Width = 31
+        Caption = 'Ключ'
+        ParentColor = False
+      end
+      object Edit5: TEdit
+        Left = 0
+        Height = 23
+        Top = 152
+        Width = 216
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 56
+        Height = 25
+        Top = 216
+        Width = 96
+        Caption = 'Расшифровать'
+        OnClick = Button2Click
+        TabOrder = 2
+      end
+      object Edit6: TEdit
+        Left = 0
+        Height = 23
+        Top = 272
+        Width = 216
+        TabOrder = 3
+      end
+      object Label6: TLabel
+        Left = 88
+        Height = 15
+        Top = 309
+        Width = 35
+        Caption = 'Вывод'
+        ParentColor = False
+      end
+    end
+  end
+end

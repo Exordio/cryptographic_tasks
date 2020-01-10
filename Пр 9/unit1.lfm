@@ -1,0 +1,89 @@
+object Form1: TForm1
+  Left = 736
+  Height = 493
+  Top = 127
+  Width = 361
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'MD5 Хеширование Голубев 310к'
+  ClientHeight = 493
+  ClientWidth = 361
+  LCLVersion = '1.6.2.0'
+  object Label1: TLabel
+    Left = 136
+    Height = 15
+    Top = 8
+    Width = 105
+    Caption = 'MD5 Хеширование'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 72
+    Top = 88
+    Width = 336
+    AutoSize = False
+    OnClick = Edit1Click
+    TabOrder = 0
+    Text = 'Text'
+  end
+  object Button1: TButton
+    Left = 112
+    Height = 40
+    Top = 168
+    Width = 146
+    Caption = 'Шифровать'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 94
+    Height = 30
+    Top = 40
+    Width = 164
+    Caption = 'Введите входной блок данных'#13#10'или выберите файл'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 64
+    Top = 224
+    Width = 336
+    AutoSize = False
+    ReadOnly = True
+    TabOrder = 2
+    Text = 'result...'
+  end
+  object Label3: TLabel
+    Left = 80
+    Height = 15
+    Top = 320
+    Width = 207
+    Caption = 'Выберите файл для его хеширования'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 32
+    Height = 50
+    Top = 352
+    Width = 299
+    Caption = 'Выбрать файл'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object OpenDialog1: TOpenDialog
+    FileName = 'C:\Users\pjs\Desktop\Новый текстовый документ.txt'
+    Filter = '.txt|*.txt'
+    InitialDir = 'C:\Users\pjs\Desktop\'
+    Options = [ofExtensionDifferent, ofEnableSizing, ofViewDetail]
+    left = 80
+    top = 424
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = '.txt|*.txt'
+    InitialDir = 'C:\Users\pjs\Desktop\'
+    Options = [ofExtensionDifferent, ofEnableSizing, ofViewDetail]
+    left = 216
+    top = 424
+  end
+end

@@ -1,0 +1,93 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { private declarations }
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.Button1Click(Sender: TObject);
+var  z,i,j,i1,j1:integer;text1,text2:string[100];
+ tab:array[1..10,1..10] of char;
+begin
+ text1:=utf8toansi(edit1.text);text2:='';
+ i:=strtoint(utf8toansi(edit2.text));
+ j:=strtoint(utf8toansi(edit3.text));
+ if (i>10) or (j>10) or (i<1) or (j<1) then showmessage('Размер таблицы от 1*1 до 10*10') else begin
+ if length(text1)<=i*j-i then showmessage('Слишком большая таблица для данного текста') else begin
+z:=1; while z<length(text1) do begin
+   for i1:=1 to i do
+     for j1:=1 to j do begin
+        if z>length(text1) then begin tab[i1,j1]:=' ';continue; end else
+        tab[i1,j1]:=text1[z];
+        z:=z+1;
+     end;
+ for j1:=1 to j do
+ for i1:=1 to i do
+ text2:=text2+tab[i1,j1];
+ end;
+edit4.Text:=ansitoutf8(text2);
+end;
+end;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+var  z,i,j,i1,j1:integer;text1,text2:string[100];
+ tab:array[1..10,1..10] of char;
+begin
+  text1:=utf8toansi(edit4.text);
+  text2:='';
+ i:=strtoint(utf8toansi(edit2.text));
+ j:=strtoint(utf8toansi(edit3.text));
+ z:=1; while z<length(text1) do begin
+   for j1:=1 to j do
+     for i1:=1 to i do begin
+        tab[i1,j1]:=text1[z];
+        z:=z+1;
+     end;
+ for i1:=1 to i do
+ for j1:=1 to j do
+ text2:=text2+tab[i1,j1];
+ end;
+edit5.Text:=ansitoutf8(text2);
+end;
+
+
+end.
+
